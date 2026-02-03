@@ -1,17 +1,21 @@
-# Kamran Khalid
-### Senior Backend Developer
+## Senior Backend Architect & Technical Leader
 
-I am a backend engineer with over 10 years of experience specializing in the design and implementation of scalable production systems. My core expertise lies in **PHP (Laravel, CodeIgniter)** and **Node.js**, with a deep focus on API architecture, microservices, and system maintainability.
+I build reliable backend systems and help teams turn complex requirements into software that actually works. With over 12 years of hands-on experience, I focus on scalability, security, and long-term maintainability in production systems.
 
-Throughout my career, I have focused on solving complex business logic challenges, specifically in payment automation (PayByLink, webhooks), CRM onboarding workflows, and document management. I advocate for pragmatic engineering—prioritizing code that is performant, testable, and easy for teams to evolve.
+## What I do (selected highlights)
+- **Fintech (Verofy®):** Backend Lead working on payment and onboarding systems for **Verofy® Enterprise payments platform®**, an **FCA-regulated Payment Institution**. My work supports secure onboarding, transaction processing, and internal decision logic used by UK SMEs.  
+- **Innovate UK (ProConvey):** Lead architect on an Innovate UK Smart Grant–funded platform that reduced routine legal enquiries by around 80% through secure, automated workflows.  
+- **Global events (MyWhoosh):** Designed the verification architecture for the UCI Cycling Esports World Championships, supporting real-time participation across 100+ countries.
 
-### Technical Writing & Implementations
-I believe that technical concepts are best understood through execution. I am currently working on a project to translate the architecture and patterns discussed in my [Medium articles](https://medium.com/@kamrankhalid06) into runnable code examples. 
+## Community & teaching
+I actively contribute to the PHP/Laravel ecosystem and the wider UK tech community.
+- **Writing:** I publish practical backend and architecture articles on Stackademic and *JavaScript in Plain English*, and maintain runnable examples in my [medium-articles](https://github.com/kamrankhalid786/medium-articles) repository.  
+- **Speaking:** Guest speaker at the University of Manchester and GDG Manchester on secure API design and real-world backend architecture.  
+- **Mentoring:** Official mentor at DeveloperWeek USA 2025, supporting engineers with real production challenges.
 
-These implementations, along with the **GT project**, are pinned below to demonstrate real-world applications of backend patterns, clean architecture, and robust error handling.
+## Tech focus
+Backend architecture, APIs, event-driven systems, and security (OAuth2/JWT).  
+Primary stack: Laravel/PHP, Node.js (NestJS), and Go.
 
-### Technical Focus
-* **Core Stack:** PHP (Laravel, CodeIgniter), Node.js (TypeScript), Go.
-* **Architecture:** Microservices, Event-driven systems, and API Gateway patterns.
-* **Domains:** Payment gateway integrations, CRM workflows, and legacy system refactoring.
-* **Speaking:** Technical speaker at events such as GDG Manchester, focusing on tech stack strategy and product development.
+## Connect
+[LinkedIn](https://www.linkedin.com/in/kamran-khalid-4310973a/) · [Medium](https://medium.com/@kamrankhalid06) · [GitHub](https://github.com/kamrankhalid786)
