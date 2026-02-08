@@ -14,7 +14,7 @@
             <button class="menu-toggle" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
+                        <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -22,8 +22,14 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
                 <li><a href="recommendations.html">Recommendations</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="community.html">Community</a>
+                    <div class="nav-dropdown">
+                        <a href="community/workshops.html">Workshops</a>
+                        <a href="community/volunteer.html">Volunteer</a>
+                        <a href="community/awards.html">Awards</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -75,7 +81,7 @@
                     <p class="content-text">
                         Now based in the UK, I'm currently at Verofy building next-generation payment infrastructure. 
                         I specialize in creating powerful abstractions that elegantly solve complex problems, with 
-                        expertise spanning Laravel, Node.js, Vue.js, React, and increasingly AI/ML integration.
+                        expertise spanning Laravel, Node.js, Vue.js, React, and increasingly AI/ML.
                     </p>
 
                     <h2 class="section-title" style="margin-top: 48px;">
@@ -112,7 +118,7 @@
                         <div class="skill-tag">React</div>
                         <div class="skill-tag">Vue.js</div>
                         <div class="skill-tag">TypeScript</div>
-                        <div class="skill-tag">AI/ML Integration</div>
+                        <div class="skill-tag">AI/ML</div>
                     </div>
                 </div>
 
@@ -140,7 +146,7 @@
                     <div class="sidebar-card">
                         <div class="sidebar-title">Interests</div>
                         <p class="content-text" style="font-size: 14px;">
-                            AI/ML Integration • Neural Networks • Cloud Architecture • 
+                            AI/ML • Neural Networks • Cloud Architecture • 
                             Mentoring Teams • Open Source • Tech Speaking
                         </p>
                     </div>
@@ -195,7 +201,7 @@
                 "React": { file: "react.svg" },
                 "Vue.js": { file: "vuedotjs.svg" },
                 "TypeScript": { file: "typescript.svg" },
-                "AI/ML Integration": { file: "openai.svg" }
+                "AI/ML": { file: "openai.svg" }
             };
 
             document.querySelectorAll('.skill-tag').forEach(function (tag) {

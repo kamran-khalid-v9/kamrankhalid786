@@ -14,7 +14,7 @@
             <button class="menu-toggle" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
+                        <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -22,8 +22,14 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="certifications.html">Certifications</a></li>
                 <li><a href="recommendations.html">Recommendations</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="community.html">Community</a>
+                    <div class="nav-dropdown">
+                        <a href="community/workshops.html">Workshops</a>
+                        <a href="community/volunteer.html">Volunteer</a>
+                        <a href="community/awards.html">Awards</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -73,10 +79,10 @@
     <section class="section">
         <div class="container">
             <div class="impact-tiles">
-                <div class="impact-tile"><span class="impact-num">15+</span> <span class="impact-label">years in backend engineering</span></div>
-                <div class="impact-tile"><span class="impact-num">50+</span> <span class="impact-label">delivered platforms</span></div>
-                <div class="impact-tile"><span class="impact-num">8</span> <span class="impact-label">companies across 3 regions</span></div>
-                <div class="impact-tile"><span class="impact-num">20+</span> <span class="impact-label">certifications</span></div>
+                <div class="impact-tile"><span class="impact-prefix">&gt;_</span><span class="impact-num">15+</span> <span class="impact-label">years in backend engineering</span></div>
+                <div class="impact-tile"><span class="impact-prefix">&gt;_</span><span class="impact-num">50+</span> <span class="impact-label">delivered platforms</span></div>
+                <div class="impact-tile"><span class="impact-prefix">&gt;_</span><span class="impact-num">8</span> <span class="impact-label">companies across 3 regions</span></div>
+                <div class="impact-tile"><span class="impact-prefix">&gt;_</span><span class="impact-num">20+</span> <span class="impact-label">certifications</span></div>
             </div>
         </div>
     </section>
@@ -118,30 +124,7 @@
                             <span class="code-key">ai</span>: <span class="code-value">risk models, fraud signals</span>
                         </div>
                     </div>
-                    <div class="sidebar-card" style="margin-top: 24px;">
-                        <div class="sidebar-title">Quick Info</div>
-                        <div class="fact-item">
-                            <span class="fact-label">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6h16v4H4V6zm0 6h10v6H4v-6z"/></svg>
-                                Current Focus
-                            </span>
-                            <span class="fact-value">Payment Systems, AI/ML Integration, API Architecture</span>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-label">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
-                                Location
-                            </span>
-                            <span class="fact-value">Manchester, United Kingdom</span>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-label">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 3h10a2 2 0 0 1 2 2v4h-2V5H7v14h10v-4h2v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm9 6h6v6h-6v-6zm2 2v2h2v-2h-2z"/></svg>
-                                AI & Data
-                            </span>
-                            <span class="fact-value">Fraud detection, decisioning engines, risk models</span>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
