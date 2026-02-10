@@ -11,17 +11,25 @@
     <section class="page-hero">
         <div class="container">
             <span class="page-label">Coder · AI · ML</span>
-            <h1 class="page-title">Certifications Moved</h1>
-            <p class="page-subtitle">
-                Credentials are now part of the Education page.
+            <h1 class="page-title">Certifications Page Moved</h1>
+            <p class="page-subtitle" role="alert">
+                The Certifications page has moved. You will be redirected to the new location shortly.<br>
+                If you are not redirected, please use the button below.
             </p>
             <div class="meta-links">
-                <a class="link-button" href="education.html">Go to Education & Credentials</a>
+                <a class="link-button" href="education.html" aria-label="Go to Education and Credentials">Go to Education & Credentials</a>
             </div>
         </div>
     </section>
+    <noscript>
+        <div style="text-align:center; color: #b00; margin-top: 2em;">
+            JavaScript is required for automatic redirection. Please use the button above to continue.
+        </div>
+    </noscript>
     <script>
-        window.location.href = "education.html";
+        setTimeout(function() {
+            window.location.href = "education.html";
+        }, 2000);
     </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta http-equiv="refresh" content="0; url=experience.html">
     <title>Products - Kamran Khalid</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
     <div class="page-rail"><div class="rail-progress" id="railProgress"></div></div>
@@ -31,17 +32,30 @@
             </ul>
         </div>
     </nav>
-
     <section class="page-hero">
         <div class="container">
             <span class="page-label">Coder · AI · ML</span>
-            <h1 class="page-title">Products</h1>
-            <p class="page-subtitle">This page has moved. You are being redirected to Experience & Products.</p>
+            <h1 class="page-title">Products Page Moved</h1>
+            <p class="page-subtitle" role="alert">
+                The Products/Projects page has moved. You will be redirected to the Experience & Products page shortly.<br>
+                If you are not redirected, please use the button below.
+            </p>
             <div class="meta-links">
-                <a class="link-button" href="experience.html">Go to Experience</a>
+                <a class="link-button" href="experience.html" aria-label="Go to Experience and Products">Go to Experience</a>
             </div>
         </div>
     </section>
+    <noscript>
+        <div style="text-align:center; color: #b00; margin-top: 2em;">
+            JavaScript is required for automatic redirection. Please use the button above to continue.
+        </div>
+    </noscript>
+    <script>
+        setTimeout(function() {
+            window.location.href = "experience.html";
+        }, 2000);
+    </script>
+    <!-- Removed duplicate closing tags and button -->
 
     <footer>
         <div class="container">
