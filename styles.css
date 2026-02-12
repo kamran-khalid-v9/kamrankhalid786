@@ -1131,7 +1131,7 @@ nav {
 }
 
 .diagram-attribution-line {
-    margin-bottom: 10px;
+    margin-top: 10px;
     color: var(--text-muted);
     font-size: 11px;
     font-family: 'IBM Plex Mono', monospace;
@@ -1139,17 +1139,24 @@ nav {
     text-transform: uppercase;
 }
 
-.attribution-banner {
-    margin-top: 14px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid rgba(51, 214, 159, 0.4);
-    background: rgba(51, 214, 159, 0.08);
-    color: var(--text-primary);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+.section-intro-compact {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section-bridge-text {
+    margin-top: 12px;
+}
+
+.architecture-diagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.architecture-diagram-grid .diagram-card {
+    margin-top: 0;
 }
 
 .zoomable-diagram {
@@ -1772,7 +1779,7 @@ nav {
 .figma-flow-grid {
     margin-top: 12px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
 }
 
@@ -1816,6 +1823,11 @@ nav {
     font-size: 14px;
     line-height: 1.6;
     color: var(--text-secondary);
+}
+
+.figma-flow-card .diagram-attribution-line {
+    margin-top: 0;
+    padding: 10px 14px 0;
 }
 
 .figma-flow-card figcaption strong {
@@ -2221,6 +2233,10 @@ nav {
         gap: 8px;
     }
 
+    .architecture-diagram-grid {
+        grid-template-columns: 1fr;
+    }
+
     .feature-stack-clean .pr-evidence-corner {
         width: 100%;
         justify-content: flex-start;
@@ -2233,6 +2249,10 @@ nav {
     }
 
     .feature-stack-clean .official-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .figma-flow-grid {
         grid-template-columns: 1fr;
     }
 
@@ -2271,11 +2291,6 @@ nav {
 
     .hero-innovation-kicker {
         font-size: 10px;
-    }
-
-    .attribution-banner {
-        font-size: 11px;
-        padding: 9px 12px;
     }
 
     .impact-compact-item {
