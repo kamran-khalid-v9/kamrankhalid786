@@ -193,10 +193,52 @@
 .polished-stats-table table {
     font-size: 1.04em;
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(51,214,159,0.07);
+    box-shadow: none;
 }
 .polished-stats-table th, .polished-stats-table td {
     padding: 15px 20px;
+}
+
+/* Consistent Mermaid Styling */
+.mermaid svg {
+    font-family: 'IBM Plex Mono', 'Space Grotesk', 'Segoe UI', Arial, sans-serif !important;
+}
+
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node ellipse,
+.mermaid .actor,
+.mermaid .section {
+    fill: #222e44 !important;
+    stroke: #33d69f !important;
+}
+
+.mermaid .edgePath path,
+.mermaid .messageLine0,
+.mermaid .messageLine1,
+.mermaid .link,
+.mermaid .arrowheadPath {
+    stroke: #33d69f !important;
+    fill: #33d69f !important;
+}
+
+.mermaid .node text,
+.mermaid .nodeLabel,
+.mermaid .label,
+.mermaid .label text,
+.mermaid .edgeLabel,
+.mermaid .edgeLabel tspan,
+.mermaid .messageText,
+.mermaid .actor text {
+    fill: #e6f0ff !important;
+    color: #e6f0ff !important;
+    font-size: 15px !important;
+}
+
+.mermaid .edgeLabel {
+    background: #182233 !important;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 .polished-stats-table th {
     background: var(--bg-tertiary);

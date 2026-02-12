@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +8,27 @@
     <link rel="stylesheet" href="proconvey-mermaid.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({ startOnLoad: true });</script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "base",
+            themeVariables: {
+                background: "#111824",
+                primaryColor: "#222e44",
+                primaryTextColor: "#e6f0ff",
+                primaryBorderColor: "#33d69f",
+                lineColor: "#33d69f",
+                secondaryColor: "#182233",
+                tertiaryColor: "#0f151f",
+                fontFamily: "IBM Plex Mono, Space Grotesk, Segoe UI, Arial, sans-serif",
+                fontSize: "15px",
+                edgeLabelBackground: "#182233"
+            }
+        });
+    </script>
 </head>
-
 <body>
-    <div class="page-rail">
-        <div class="rail-progress" id="railProgress"></div>
-    </div>
-            <!-- Card/Grid layout for stats and PRs (Option 2) -->
+    <div class="page-rail"><div class="rail-progress" id="railProgress"></div></div>
     <nav>
         <div class="nav-container">
             <div class="logo">Kamran Khalid</div>
@@ -43,43 +55,120 @@
     <section class="page-hero">
         <div class="container hero-container">
             <span class="page-label">LegalTech · SaaS · AI</span>
-            <h1 class="page-title hero-title">
-                ProConvey: Technical Contribution
-                <span class="hero-svg-accent">
-                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="60" cy="60" r="56" stroke="#33d69f" stroke-width="8" fill="none"/>
-                        <rect x="35" y="35" width="50" height="50" rx="12" stroke="#5fe3b6" stroke-width="4" fill="none"/>
-                    </svg>
-                </span>
-            </h1>
-            <div class="page-subtitle hero-subtitle">
-                A deep dive into the technical architecture, features, and impact of ProConvey’s legal-tech SaaS platform.
-            </div>
-            <div class="hero-meta-inline">
-                <div class="meta-block">
-                    <strong>Role:</strong> Senior Software Developer<br>
-                    <strong>Period:</strong> May 2023 – April 2024<br>
-                    <strong>Focus:</strong> Backend architecture, compliance automation, grant-critical delivery<br>
+            <h1 class="page-title">ProConvey: Technical Contribution</h1>
+            <p class="page-subtitle hero-subtitle">
+                A focused breakdown of the technical architecture, features, and measurable impact delivered at ProConvey.
+            </p>
+            
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kamran-khalid-4310973a/" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://medium.com/@kamrankhalid06" class="social-link" target="_blank" aria-label="Medium">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-11zm4.5 9.5c1.93 0 3.5-2.24 3.5-5s-1.57-5-3.5-5-3.5 2.24-3.5 5 1.57 5 3.5 5zm7 0c1.52 0 2.75-2.24 2.75-5s-1.23-5-2.75-5-2.75 2.24-2.75 5 1.23 5 2.75 5zm4.25-.39c.55 0 1-.95 1-2.11s-.45-2.11-1-2.11-1 .95-1 2.11.45 2.11 1 2.11z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@kamrankhalid.com" class="social-link" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                        </svg>
+                    </a>
+                    <span class="social-divider"></span>
+                    <div class="social-group">
+                        <span class="social-label personal">Personal</span>
+                        <a href="https://github.com/kamrankhalid786" class="social-link" target="_blank" aria-label="GitHub Personal" title="GitHub Personal">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-group">
+                        <span class="social-label pro">Pro (Last 2 Years)</span>
+                        <a href="https://github.com/kamran-khalid-v9" class="social-link" target="_blank" aria-label="GitHub Pro" title="GitHub Pro">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="meta-block">
-                    <strong>Organization:</strong> ProConvey Limited<br>
-                    <strong>Website:</strong> <a href="https://proconvey.co.uk/" target="_blank" rel="noopener">proconvey.co.uk</a><br>
-                    <strong>About:</strong> ProConvey digitizes and automates the UK property conveyancing process, reducing manual paperwork, improving compliance, and accelerating onboarding for conveyancers, buyers, and sellers.
-                </div>
+<div class="hero-meta-clean">
+                <div class="hero-meta-row"><span>Role</span>Senior Software Developer</div>
+                <div class="hero-meta-row"><span>Period</span>May 2023 – April 2024</div>
+                <div class="hero-meta-row"><span>Focus</span>Backend architecture, compliance automation, grant-critical delivery</div>
+                <div class="hero-meta-row"><span>Organization</span>ProConvey Limited (<a href="https://proconvey.co.uk/" target="_blank" rel="noopener">proconvey.co.uk</a>)</div>
             </div>
         </div>
         <div class="hero-bottom-spacer"></div>
     </section>
 
     <section class="section">
-            <div class="container">
-                <h2 class="section-title">High-Level Architecture</h2>
-                <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                    Overview of the platform’s main components and how they interact to deliver a seamless conveyancing experience.
-                </div>
-            <div class="diagram-card" style="background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px 18px 24px; margin-bottom: 32px; box-shadow: 0 2px 12px rgba(51,214,159,0.06);">
-                <div style="font-size: 15px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; margin-bottom: 10px; letter-spacing: 1px;">High-Level Architecture Diagram</div>
-                <div class="mermaid">
+        <div class="container">
+            <h2 class="section-title">What Is ProConvey</h2>
+            <p class="section-intro">
+                ProConvey is a cloud-based, all-in-one conveyancing portal for law firms and estate agents. The platform digitizes onboarding,
+                compliance, and case management to reduce manual paperwork, improve data accuracy, and accelerate the UK property transaction flow.
+            </p>
+            <h3 class="section-subtitle">Leadership Story</h3>
+            <div class="content-single">
+                <p class="content-text">
+                    ProConvey had secured an Innovate UK Smart Grant, but continued funding depended on measurable technical milestones.
+                    I led the backend architecture and delivery that moved the platform from concept to a market-ready, compliant onboarding system.
+                </p>
+                <p class="content-text">
+                    The main feature I architected was the automated “exchange-ready” document pack. I designed the data model and orchestration that
+                    assembles protocol forms (TA6/TA7/TA10), evidence, and naming conventions into compliant bundles—cutting onboarding time from weeks
+                    to hours and reducing standard legal inquiries by 80%.
+                </p>
+            </div>
+            <div class="metric-chips metric-chips-tight">
+                <div class="metric-chip">2,200+ Clients (since Jul 2024)</div>
+                <div class="metric-chip">80% Fewer Legal Inquiries</div>
+                <div class="metric-chip">£850k+ Funding · £202,929 Innovate UK</div>
+                <div class="metric-chip">286 Merged PRs</div>
+                <div class="metric-chip">10,531 Additions · 5,420 Deletions</div>
+                <div class="metric-chip">5 Core Integrations</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Implementation Summary</h2>
+            <p class="section-intro">
+                A concise summary of the main systems and automation I delivered across compliance, integrations, and document orchestration.
+            </p>
+            <div class="content-single">
+                <p class="content-text">
+                    I was the primary architect for the backend lifecycle that satisfied Innovate UK Smart Grant milestones. I engineered the AI-driven
+                    KYC/KYB decisioning layer and automated Companies House plus property data retrieval. I orchestrated mission-critical integrations
+                    across Yoti, Stripe, Sprift, Royal Mail AddressNow, and Companies House, ensuring a legally compliant onboarding flow. I built
+                    automated “exchange-ready” document packs (TA6/TA7/TA10) that reduced onboarding from weeks to hours, while architectural refactors
+                    reduced technical debt and enabled scale to 2,200+ clients.
+                </p>
+            </div>
+            <div class="stack-icons stack-row" aria-label="ProConvey technology stack">
+                <div class="stack-icon" aria-label="Laravel"><img class="stack-logo" src="assets/tech/laravel.svg" alt="Laravel logo"></div>
+                <div class="stack-icon" aria-label="GraphQL"><img class="stack-logo" src="assets/tech/graphql.svg" alt="GraphQL logo"></div>
+                <div class="stack-icon" aria-label="React"><img class="stack-logo" src="assets/tech/react.svg" alt="React logo"></div>
+                <div class="stack-icon" aria-label="TypeScript"><img class="stack-logo" src="assets/tech/typescript.svg" alt="TypeScript logo"></div>
+                <div class="stack-icon" aria-label="Identity"><img class="stack-logo" src="assets/tech/identity.svg" alt="Identity icon"></div>
+                <div class="stack-icon" aria-label="Payments"><img class="stack-logo" src="assets/tech/payments.svg" alt="Payments icon"></div>
+                <div class="stack-icon" aria-label="Data sources"><img class="stack-logo" src="assets/tech/data-sources.svg" alt="Data sources icon"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">High-Level Architecture</h2>
+            <p class="section-intro">Overview of the platform’s main components and how they interact to deliver a seamless conveyancing experience.</p>
+            <div class="diagram-card">
+                <div class="diagram-caption">High-Level Architecture Diagram</div>
+                                        <div class="mermaid">
                     flowchart LR
                     A["Web Frontend (Next.js, React)"] -- API Calls --> B["API Backend (Laravel, PHP)"]
                     C["Mobile App (Flutter)"] -- API Calls --> B
@@ -92,14 +181,12 @@
     </section>
 
     <section class="section">
-            <div class="container">
-                <h2 class="section-title">Backend Structure & Code Organization</h2>
-                <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                    A breakdown of the backend’s modular design, showing how services, jobs, and helpers are organized for maintainability.
-                </div>
-            <div class="diagram-card" style="background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px 18px 24px; margin-bottom: 32px; box-shadow: 0 2px 12px rgba(51,214,159,0.06);">
-                <div style="font-size: 15px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; margin-bottom: 10px; letter-spacing: 1px;">Backend Structure Diagram</div>
-                <div class="mermaid">
+        <div class="container">
+            <h2 class="section-title">Backend Structure & Code Organization</h2>
+            <p class="section-intro">A breakdown of the backend’s modular design, showing how services, jobs, and helpers are organized for maintainability.</p>
+            <div class="diagram-card">
+                <div class="diagram-caption">Backend Structure Diagram</div>
+                                        <div class="mermaid">
                     graph TD
                     Backend[API Backend]
                     Backend --> Services[Services]
@@ -122,22 +209,22 @@
     </section>
 
     <section class="section">
-            <div class="container">
-                <h2 class="section-title">Features Developed & Led</h2>
-                <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                    Key technical features I designed and delivered, each contributing to automation, compliance, and user experience.
-                </div>
-            <div class="feature-list">
-                <section style="margin-bottom:2.5em;">
-                    <h3 style="margin-bottom:0.7em;">1. AI-Driven Compliance Logic <span style="font-weight:400;font-size:0.85em;">(KYC/KYB Automation)</span></h3>
-                    <ul style="margin-left:1.5em; margin-bottom:1.2em;">
-                        <li><strong>Purpose:</strong> Automates customer/business verification, reducing manual errors and speeding onboarding.</li>
-                        <li><strong>Importance:</strong> Directly impacts compliance, risk, and onboarding speed; core to platform’s legal-tech value.</li>
-                        <li><strong>Uniqueness:</strong> Integrates multiple APIs, applies AI/business rules, and automates legal checks.</li>
-                    </ul>
+        <div class="container">
+            <h2 class="section-title">Features Developed & Led</h2>
+            <p class="section-intro">Key features delivered with clear impact on compliance, automation, and user experience.</p>
+            <div class="feature-stack">
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>AI-Driven Compliance Logic (KYC/KYB)</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Automates customer/business verification, reducing manual errors and speeding onboarding.</li>
+                            <li><strong>Importance:</strong> Directly impacts compliance, risk, and onboarding speed.</li>
+                            <li><strong>Uniqueness:</strong> Integrates multiple APIs with AI/business rules for automated legal checks.</li>
+                        </ul>
+                    </div>
                     <div class="diagram-card">
                         <div class="diagram-caption">Compliance Logic Sequence</div>
-                        <div class="mermaid">
+                                                <div class="mermaid">
                             sequenceDiagram
                             participant User
                             participant Frontend
@@ -146,200 +233,149 @@
                             participant Sprift
                             participant AIEngine
                             participant DB
-                            participant Notifier
-
                             User->>Frontend: Submit onboarding form
                             Frontend->>API: Send onboarding data
                             API->>CompaniesHouse: Fetch company data
                             API->>Sprift: Fetch property data
                             API->>AIEngine: Run compliance logic
-                            AIEngine->>DB: Update user/case status
-                            AIEngine->>Notifier: Send notifications
-                            Notifier->>User: Notify onboarding result
+                            AIEngine->>DB: Update status
                         </div>
                     </div>
-                    <div class="code-structure" style="margin-bottom:0;">
-                        <strong>Code Structure:</strong>
-                        <ul style="margin-left:1.2em;">
-                            <li>Services/ComplianceService.php</li>
-                            <li>Helpers/CompaniesHouseService.php</li>
-                            <li>Helpers/SpriftService.php</li>
-                            <li>Jobs/RunComplianceCheck.php</li>
-                            <li>Notifications/KycResultNotification.php</li>
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Protocol Pack Automation (TA6, TA10)</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Aggregates legal forms into digital bundles for conveyancers.</li>
+                            <li><strong>Importance:</strong> Reduces onboarding from weeks to hours.</li>
+                            <li><strong>Uniqueness:</strong> Dynamic aggregation, PDF generation, and digital delivery.</li>
                         </ul>
                     </div>
-                </section>
-                <h3>2. Protocol Pack Automation (TA6, TA10, etc.)</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Aggregates legal forms into digital bundles for conveyancers.</li>
-                    <li><strong>Importance:</strong> Reduces onboarding from weeks to hours, automates document handling.</li>
-                    <li><strong>Uniqueness:</strong> Dynamic aggregation, PDF generation, and digital delivery.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Protocol Pack Automation Flow</div>
-                    <div class="mermaid">
-                        flowchart TD
-                        A["User completes forms"] --> B["Job aggregates TA6, TA10, etc."]
-                        B --> C["Generate digital bundle (PDF)"]
-                        C --> D["Attach bundle to case"]
-                        D --> E["Notify conveyancer"]
-                        E --> F["Client onboarding complete"]
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Protocol Pack Automation Flow</div>
+                                                <div class="mermaid">
+                            flowchart LR
+                            A["User completes forms"] --> B["Aggregate TA6/TA10"]
+                            B --> C["Generate PDF bundle"]
+                            C --> D["Attach to case"]
+                            D --> E["Notify conveyancer"]
+                        </div>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>GraphQL/Queries/AllDocumentsLink.php</li>
-                        <li>Jobs/CreateAndSendFormsToYotiJob.php</li>
-                        <li>Services/ProtocolFormService.php</li>
-                        <li>Services/PdfService.php</li>
-                    </ul>
-                </div>
-                <h3>3. Yoti IDV Integration (Secure Identity Verification)</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Enables secure, legally binding onboarding via Yoti.</li>
-                    <li><strong>Importance:</strong> Ensures compliance, reduces fraud, and streamlines user verification.</li>
-                    <li><strong>Uniqueness:</strong> Real-time IDV, webhook handling, session completion automation.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Yoti IDV Integration Flow</div>
-                    <div class="mermaid">
-                        flowchart LR
-                        A[API Backend] --> B[Initiate Yoti IDV Session]
-                        B --> C[Yoti IDV Platform]
-                        C -- Webhook --> D[Webhook Handler Job]
-                        D --> E[Update Verification Status]
-                        E --> F[Trigger Next Steps/Notifications]
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Yoti IDV Integration</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Secure identity verification for legally binding onboarding.</li>
+                            <li><strong>Importance:</strong> Reduces fraud and improves compliance.</li>
+                            <li><strong>Uniqueness:</strong> Webhook-driven automation with real-time session completion.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>Services/YotiIdvService.php</li>
-                        <li>Jobs/Webhooks/YotiIdv/SessionCompletionJob.php</li>
-                        <li>config/webhook-client.php</li>
-                    </ul>
-                </div>
-                <h3>4. Sprift Property Data & Images Automation</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Automates property data/image retrieval for onboarding.</li>
-                    <li><strong>Importance:</strong> Reduces manual entry, improves data accuracy.</li>
-                    <li><strong>Uniqueness:</strong> Async jobs, API integration, dynamic property enrichment.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Sprift Property Data & Images Flow</div>
-                    <div class="mermaid">
-                        flowchart LR
-                        A[Property Created/Updated] --> B[Trigger SpriftDataJob]
-                        B --> C[Fetch Property Data from Sprift API]
-                        C --> D[Update Property Record]
-                        D --> E[Trigger SpriftPropertyImagesJob]
-                        E --> F[Fetch Images from Sprift]
-                        F --> G[Store Images in DB/Storage]
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Yoti IDV Integration Flow</div>
+                                                <div class="mermaid">
+                            flowchart LR
+                            A[API Backend] --> B[Start Yoti IDV Session]
+                            B --> C[Yoti Platform]
+                            C -- Webhook --> D[Webhook Job]
+                            D --> E[Update Status]
+                        </div>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>Jobs/SpriftDataJob.php</li>
-                        <li>Jobs/SpriftPropertyImagesJob.php</li>
-                        <li>Services/SpriftService.php</li>
-                    </ul>
-                </div>
-                <h3>5. Stripe Payment Integration & Webhooks</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Handles digital payments, webhook events, and payment status.</li>
-                    <li><strong>Importance:</strong> Enables seamless payment flows, automates financial tracking.</li>
-                    <li><strong>Uniqueness:</strong> Custom webhook jobs, event-driven updates.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Stripe Payment Integration Sequence</div>
-                    <div class="mermaid">
-                        sequenceDiagram
-                        participant User
-                        participant Frontend
-                        participant API
-                        participant Stripe
-                        participant WebhookJob
-
-                        User->>Frontend: Initiate Payment
-                        Frontend->>API: Send Payment Request
-                        API->>Stripe: Create Payment Intent
-                        Stripe-->>API: Payment Confirmation
-                        Stripe-->>WebhookJob: Webhook Event (e.g., PaymentIntentSucceeded)
-                        WebhookJob->>API: Update Payment Status
-                        API->>User: Notify Payment Success
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Sprift Property Data Automation</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Enriches properties with data and images from Sprift.</li>
+                            <li><strong>Importance:</strong> Improves accuracy and reduces manual entry.</li>
+                            <li><strong>Uniqueness:</strong> Async jobs with API-driven enrichment.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>config/stripe-webhooks.php</li>
-                        <li>Jobs/Webhooks/Stripe/PaymentIntentSucceeded.php</li>
-                        <li>Providers/AppServiceProvider.php</li>
-                    </ul>
-                </div>
-                <h3>6. Automated Overview PDF Generation</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Generates summary PDFs for properties and cases.</li>
-                    <li><strong>Importance:</strong> Provides legal documentation, improves client experience.</li>
-                    <li><strong>Uniqueness:</strong> Dynamic data aggregation, PDF rendering, media management.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Overview PDF Generation Flow</div>
-                    <div class="mermaid">
-                        flowchart LR
-                        A[Property/Case Data] --> B[Aggregate Data]
-                        B --> C[Render PDF with PdfService]
-                        C --> D[Attach PDF to Property]
-                        D --> E[Make PDF Available for Download]
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Sprift Data Enrichment Flow</div>
+                                                <div class="mermaid">
+                            flowchart LR
+                            A[Property created] --> B[SpriftDataJob]
+                            B --> C[Fetch data]
+                            C --> D[Update property]
+                            D --> E[Fetch images]
+                        </div>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>Jobs/GenerateOverviewPdfJob.php</li>
-                        <li>Services/PdfService.php</li>
-                    </ul>
-                </div>
-                <h3>7. Notification & Email Automation</h3>
-                <ul>
-                    <li><strong>Purpose:</strong> Sends automated notifications for onboarding, document status, and payments.</li>
-                    <li><strong>Importance:</strong> Keeps users informed, reduces manual follow-ups.</li>
-                    <li><strong>Uniqueness:</strong> Event-driven, customizable templates.</li>
-                </ul>
-                <div class="diagram-card">
-                    <div class="diagram-caption">Notification & Email Automation Flow</div>
-                    <div class="mermaid">
-                        flowchart LR
-                        A["Event Occurs (e.g., Payment, Status Change)"] --> B["Trigger Notification"]
-                        B --> C["Select Notification Template"]
-                        C --> D["Send Email/SMS/In-App Notification"]
-                        D --> E["User Receives Notification"]
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Stripe Payments & Webhooks</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Event-driven payments and webhook handling.</li>
+                            <li><strong>Importance:</strong> Reliable financial tracking and payment flow.</li>
+                            <li><strong>Uniqueness:</strong> Custom webhook jobs and state synchronization.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="code-structure">
-                    <strong>Code Structure:</strong>
-                    <ul>
-                        <li>Notifications/OnboardingNotification.php</li>
-                        <li>Mail/DocumentStatusMail.php</li>
-                        <li>Events/PaymentStatusChanged.php</li>
-                    </ul>
-                </div>
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Stripe Payment Sequence</div>
+                                                <div class="mermaid">
+                            sequenceDiagram
+                            participant User
+                            participant Frontend
+                            participant API
+                            participant Stripe
+                            User->>Frontend: Initiate payment
+                            Frontend->>API: Create intent
+                            API->>Stripe: Payment intent
+                            Stripe-->>API: Confirmation
+                        </div>
+                    </div>
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Overview PDF Generation</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> On-demand PDF summaries for properties and cases.</li>
+                            <li><strong>Importance:</strong> Improves client experience and documentation quality.</li>
+                            <li><strong>Uniqueness:</strong> Dynamic aggregation and rendering pipeline.</li>
+                        </ul>
+                    </div>
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Overview PDF Generation Flow</div>
+                                                <div class="mermaid">
+                            flowchart LR
+                            A[Case data] --> B[Aggregate data]
+                            B --> C[Render PDF]
+                            C --> D[Attach to case]
+                        </div>
+                    </div>
+                </article>
+                <article class="feature-block">
+                    <div class="feature-header">
+                        <h3>Notification & Email Automation</h3>
+                        <ul class="feature-points">
+                            <li><strong>Purpose:</strong> Automated communications for onboarding and payments.</li>
+                            <li><strong>Importance:</strong> Reduces manual follow-ups and improves transparency.</li>
+                            <li><strong>Uniqueness:</strong> Event-driven templates with multi-channel delivery.</li>
+                        </ul>
+                    </div>
+                    <div class="diagram-card">
+                        <div class="diagram-caption">Notification Automation Flow</div>
+                                                <div class="mermaid">
+                            flowchart LR
+                            A[Event occurs] --> B[Select template]
+                            B --> C[Send email/SMS]
+                            C --> D[User notified]
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="section">
-            <div class="container">
-                <h2 class="section-title">Linking Features to Main Product Flow</h2>
-                <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                    How my contributions integrate with and enhance the overall product workflow.
-                </div>
-            <div class="diagram-card" style="background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px 18px 24px; margin-bottom: 32px; box-shadow: 0 2px 12px rgba(51,214,159,0.06);">
-                <div style="font-size: 15px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; margin-bottom: 10px; letter-spacing: 1px;">Product Flow: Core vs. Contributions</div>
-                <div class="mermaid">
-                    %% Swimlane diagram: Core Product vs Kamran's Contributions
+        <div class="container">
+            <h2 class="section-title">Linking Features to Product Flow</h2>
+            <p class="section-intro">How these contributions map directly to the core conveyancing workflow.</p>
+            <div class="diagram-card zoomable-diagram">
+                <div class="diagram-caption">Core Product vs. Contributions</div>
+                <button class="diagram-zoom-btn" type="button" onclick="openDiagramZoomFromButton(this)">Zoom diagram</button>
+                                        <div class="mermaid">
                     flowchart LR
                     subgraph "Core Product"
                     A["User Onboarding"] --> B["User Management"]
@@ -378,16 +414,13 @@
     </section>
 
     <section class="section">
-            <div class="container">
-                <h2 class="section-title">Importance & Uniqueness</h2>
-                <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                    What sets ProConvey apart in the legal-tech market and why these features matter.
-                </div>
-            <ul>
+        <div class="container">
+            <h2 class="section-title">Importance & Uniqueness</h2>
+            <p class="section-intro">Why this implementation stands out in the UK legal-tech landscape.</p>
+            <ul class="clean-list">
                 <li>Each feature is architected for scalability, compliance, and automation.</li>
-                <li>Integrations with third-party APIs (Yoti, Stripe, Sprift, Royal Mail, Companies House) are rare in
-                    legal-tech.</li>
-                <li>Automated document and compliance flows set ProConvey apart in the UK market.</li>
+                <li>Integrations with Yoti, Stripe, Sprift, Royal Mail, and Companies House are rare in legal-tech.</li>
+                <li>Automated document and compliance flows set ProConvey apart in the market.</li>
             </ul>
         </div>
     </section>
@@ -395,25 +428,10 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title">PR & Commit Stats</h2>
-            <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                Key metrics and sample pull requests demonstrating my technical impact on the project.
-            </div>
-            <div class="stats-icons-row" style="display:flex;gap:2.5em;margin-bottom:2em;align-items:center;">
-                <div style="display:flex;align-items:center;gap:0.7em;">
-                    <span style="font-size:1.7em;vertical-align:middle;">🔀</span>
-                    <span style="font-size:1.1em;">Merged PRs</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:0.7em;">
-                    <span style="font-size:1.7em;vertical-align:middle;">📝</span>
-                    <span style="font-size:1.1em;">Commits</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:0.7em;">
-                    <span style="font-size:1.7em;vertical-align:middle;">💡</span>
-                    <span style="font-size:1.1em;">Contributions</span>
-                </div>
-            </div>
-            <div class="stats-table polished-stats-table">
-                <table>
+            <p class="section-intro">Key metrics and sample pull requests demonstrating measurable impact.</p>
+            <div class="stats-row">
+                <div class="stats-table stats-table-clean">
+                    <table>
                     <thead>
                         <tr>
                             <th>Year</th>
@@ -438,11 +456,8 @@
                     </tbody>
                 </table>
             </div>
-            <h3 style="display:flex;align-items:center;gap:0.6em;margin-top:2.2em;margin-bottom:1em;font-size:1.18em;">
-                <span style="font-size:1.3em;">📦</span> Sample PRs
-            </h3>
-            <div class="stats-table polished-stats-table">
-                <table>
+                <div class="stats-table stats-table-clean">
+                    <table>
                     <thead>
                         <tr>
                             <th>PR Number</th>
@@ -451,11 +466,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>#1155</td>
-                            <td>Yoti IDV redirect system</td>
-                            <td>Feb 21, 2024</td>
-                        </tr>
                         <tr>
                             <td>#861</td>
                             <td>Automated Protocol Pack aggregation</td>
@@ -467,59 +477,37 @@
                             <td>Jan 26, 2024</td>
                         </tr>
                         <tr>
+                            <td>#1155</td>
+                            <td>Yoti IDV redirect system</td>
+                            <td>Feb 21, 2024</td>
+                        </tr>
+                        <tr>
                             <td>#1451</td>
                             <td>Overview bugfixes and enhancements</td>
                             <td>Apr 2, 2024</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2 class="section-title">External Links</h2>
-            <div class="page-subtitle" style="margin-bottom: 2em; max-width: 700px;">
-                Explore more about ProConvey and my professional presence.
+            <div class="icon-links-row" aria-label="External links">
+                <a class="icon-link" href="https://proconvey.co.uk/" target="_blank" aria-label="ProConvey">
+                    <span class="icon">🌐</span><span class="label">ProConvey</span>
+                </a>
+                <a class="icon-link" href="https://github.com/kamrankhalid786?tab=overview&from=2023-12-01&to=2023-12-31" target="_blank" aria-label="GitHub 2023">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="label">GitHub ’23</span>
+                </a>
+                <a class="icon-link" href="https://github.com/kamrankhalid786?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank" aria-label="GitHub 2024">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span class="label">GitHub ’24</span>
+                </a>
             </div>
-            <ul class="external-links-list polished-external-links-list">
-                <li style="display:flex;align-items:center;gap:0.7em;background:var(--bg-tertiary);border-radius:8px;padding:0.7em 1em;">
-                    <span style="font-size:1.5em;">📚</span>
-                    <a href="https://stackademic.com/" target="_blank">Stackademic Profile</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:0.7em;background:var(--bg-tertiary);border-radius:8px;padding:0.7em 1em;">
-                    <span style="font-size:1.5em;">💼</span>
-                    <a href="https://www.linkedin.com/in/kamrankhalid786/" target="_blank">LinkedIn</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:0.7em;background:var(--bg-tertiary);border-radius:8px;padding:0.7em 1em;">
-                    <span style="font-size:1.5em;">🌐</span>
-                    <a href="https://proconvey.co.uk/" target="_blank">ProConvey Website</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:0.7em;background:var(--bg-tertiary);border-radius:8px;padding:0.7em 1em;">
-                    <span style="font-size:1.5em;">🐙</span>
-                    <a href="https://github.com/kamrankhalid786?tab=overview&from=2023-12-01&to=2023-12-31" target="_blank">GitHub Contributions 2023</a>
-                </li>
-                <li style="display:flex;align-items:center;gap:0.7em;background:var(--bg-tertiary);border-radius:8px;padding:0.7em 1em;">
-                    <span style="font-size:1.5em;">🐙</span>
-                    <a href="https://github.com/kamrankhalid786?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank">GitHub Contributions 2024</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">External Links</h2>
-            <ul>
-                <li><a href="https://stackademic.com/" target="_blank">Stackademic Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/kamrankhalid786/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://proconvey.co.uk/" target="_blank">ProConvey Website</a></li>
-                <li><a href="https://github.com/kamrankhalid786?tab=overview&from=2023-12-01&to=2023-12-31"
-                        target="_blank">GitHub Contributions 2023</a></li>
-                <li><a href="https://github.com/kamrankhalid786?tab=overview&from=2024-12-01&to=2024-12-31"
-                        target="_blank">GitHub Contributions 2024</a></li>
-            </ul>
         </div>
     </section>
 
@@ -528,24 +516,38 @@
             <div class="footer-content">
                 <p class="footer-text">© 2026 Kamran Khalid. All rights reserved.</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/kamrankhalid" class="social-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/kamran-khalid-4310973a/" class="social-link" target="_blank" aria-label="LinkedIn">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                         </svg>
                     </a>
-                    <a href="https://github.com/kamrankhalid" class="social-link" target="_blank">
+                    <a href="https://medium.com/@kamrankhalid06" class="social-link" target="_blank" aria-label="Medium">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            <path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-11zm4.5 9.5c1.93 0 3.5-2.24 3.5-5s-1.57-5-3.5-5-3.5 2.24-3.5 5 1.57 5 3.5 5zm7 0c1.52 0 2.75-2.24 2.75-5s-1.23-5-2.75-5-2.75 2.24-2.75 5 1.23 5 2.75 5zm4.25-.39c.55 0 1-.95 1-2.11s-.45-2.11-1-2.11-1 .95-1 2.11.45 2.11 1 2.11z"/>
                         </svg>
                     </a>
-                    <a href="mailto:contact@kamrankhalid.com" class="social-link">
+                    <a href="mailto:contact@kamrankhalid.com" class="social-link" aria-label="Email">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
                         </svg>
                     </a>
+                    <span class="social-divider"></span>
+                    <div class="social-group">
+                        <span class="social-label personal">Personal</span>
+                        <a href="https://github.com/kamrankhalid786" class="social-link" target="_blank" aria-label="GitHub Personal" title="GitHub Personal">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-group">
+                        <span class="social-label pro">Pro (Last 2 Years)</span>
+                        <a href="https://github.com/kamran-khalid-v9" class="social-link" target="_blank" aria-label="GitHub Pro" title="GitHub Pro">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -554,7 +556,61 @@
         function toggleMenu() {
             document.getElementById('navLinks').classList.toggle('active');
         }
-    </script>
-</body>
+        function openDiagramZoom(card) {
+            var overlay = document.getElementById('diagramZoom');
+            var canvas = overlay.querySelector('.diagram-zoom-canvas');
+            canvas.innerHTML = '';
 
+            var mermaidEl = card.querySelector('.mermaid');
+            if (!mermaidEl) return;
+            var def = mermaidEl.textContent.trim();
+            var id = 'zoom-' + Math.random().toString(36).slice(2);
+
+            mermaid.render(id, def).then(function (res) {
+                canvas.innerHTML = res.svg;
+                if (res.bindFunctions) res.bindFunctions(canvas);
+                overlay.classList.add('active');
+            }).catch(function (err) {
+                canvas.innerHTML = '<pre style=\"white-space:pre-wrap;color:#e6f0ff;\">Diagram render failed. Please try again.</pre>';
+                overlay.classList.add('active');
+                console.error(err);
+            });
+        }
+
+        function openDiagramZoomFromButton(btn) {
+            var card = btn.closest('.zoomable-diagram');
+            if (!card) return;
+            var overlay = document.getElementById('diagramZoom');
+            var canvas = overlay.querySelector('.diagram-zoom-canvas');
+            canvas.innerHTML = '';
+            var svg = card.querySelector('svg');
+            if (svg) {
+                var clone = svg.cloneNode(true);
+                clone.removeAttribute('width');
+                clone.removeAttribute('height');
+                clone.style.width = '100%';
+                clone.style.height = 'auto';
+                canvas.appendChild(clone);
+                overlay.classList.add('active');
+                return;
+            }
+            openDiagramZoom(card);
+        }
+
+        document.addEventListener('click', function (e) {
+            if (e.target.id === 'diagramZoom' || e.target.classList.contains('diagram-zoom-close')) {
+                document.getElementById('diagramZoom').classList.remove('active');
+            }
+        });
+
+
+    </script>
+
+    <div class="diagram-zoom-overlay" id="diagramZoom" aria-hidden="true">
+        <div class="diagram-zoom-content">
+            <button class="diagram-zoom-close" type="button">Close</button>
+            <div class="diagram-zoom-canvas"></div>
+        </div>
+    </div>
+</body>
 </html>
