@@ -3440,6 +3440,360 @@ footer {
 .stats-table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
+
+/* Fintech Workshop Page */
+#intro,
+#presenter,
+#concepts,
+#demo,
+#workshop,
+#code-steps,
+#cli,
+#architecture {
+    scroll-margin-top: 110px;
+}
+
+.workshop-anchor-links {
+    margin-top: 22px;
+}
+
+.mindset-banner {
+    margin-top: 8px;
+    padding: 14px 16px;
+    border-left: 3px solid rgba(51, 214, 159, 0.75);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: rgba(51, 214, 159, 0.08);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.presenter-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 22px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.presenter-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(8, 12, 20, 0.24);
+}
+
+.presenter-role {
+    margin-bottom: 10px;
+}
+
+.presenter-copy {
+    margin-bottom: 0;
+}
+
+.workshop-code-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.workshop-code-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+}
+
+.workshop-code-card h3 {
+    margin-bottom: 12px;
+}
+
+.workshop-code {
+    margin: 0;
+    padding: 14px 16px;
+    background: var(--terminal);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.workshop-step-list {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    gap: 16px;
+}
+
+.workshop-step {
+    margin: 0;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+}
+
+.workshop-step h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.step-note {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.workshop-diagram {
+    margin: 0;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px dashed var(--border);
+    background: rgba(11, 15, 20, 0.55);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    overflow: hidden;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.visual-note {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.clean-diagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.clean-diagram-card {
+    padding: 20px;
+    border-radius: 14px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    box-shadow: 0 16px 32px rgba(8, 12, 20, 0.18);
+}
+
+.clean-diagram-card h4 {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.clean-diagram {
+    margin: 0;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px dashed var(--border);
+    background: rgba(11, 15, 20, 0.58);
+    color: var(--text-secondary);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    overflow: hidden;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.clean-diagram code {
+    display: block;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    color: inherit;
+}
+
+.code-step-stack {
+    margin-top: 18px;
+    display: grid;
+    gap: 16px;
+}
+
+.code-step-card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+}
+
+.code-step-card h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* Fintech workshop clean layout */
+.fintech-workshop-page .sidebar-card.plain-panel {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--border-subtle);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2px 0 2px 16px;
+}
+
+.learning-list {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 8px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.fintech-workshop-page .concepts-matrix {
+    margin-top: 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.fintech-workshop-page .concepts-matrix-row {
+    display: grid;
+    grid-template-columns: minmax(140px, 0.85fr) minmax(160px, 0.8fr) minmax(220px, 1.35fr);
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    align-items: start;
+}
+
+.fintech-workshop-page .matrix-area {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.fintech-workshop-page .matrix-general,
+.fintech-workshop-page .matrix-fintech {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.fintech-workshop-page .matrix-kicker {
+    display: block;
+    margin-bottom: 3px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.fintech-workshop-page .concepts-pillars {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 26px;
+}
+
+.fintech-workshop-page .concepts-pillar {
+    padding-top: 12px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.fintech-workshop-page .concepts-pillar h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.fintech-workshop-page .compact-list {
+    margin-top: 0;
+    gap: 6px;
+}
+
+.endpoint-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.endpoint-list li + li {
+    margin-top: 6px;
+}
+
+.fintech-workshop-page .workshop-code-grid {
+    gap: 32px;
+}
+
+.fintech-workshop-page .workshop-code-card {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.fintech-workshop-page .workshop-step-list.learning-steps {
+    padding-left: 0;
+    gap: 26px;
+}
+
+.fintech-workshop-page .learning-steps .workshop-step {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--border-subtle);
+    border-radius: 0;
+    margin: 0;
+    padding: 4px 0 4px 16px;
+}
+
+.fintech-workshop-page .code-step-stack {
+    gap: 24px;
+}
+
+.fintech-workshop-page .code-step-card {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid rgba(51, 214, 159, 0.35);
+    border-radius: 0;
+    padding: 4px 0 4px 16px;
+}
+
+.fintech-workshop-page .clean-diagram-card {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.fintech-workshop-page .clean-diagram-card h4 {
+    margin-bottom: 10px;
+}
+
+.fintech-workshop-page .clean-diagram {
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+}
+
+.fintech-workshop-page .presenter-card {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--border-subtle);
+    border-radius: 0;
+    padding: 2px 0 2px 16px;
+}
+
+.fintech-workshop-page .presenter-photo {
+    box-shadow: none;
+}
 /* Custom Table Styles for Stats & PRs */
 @media (max-width: 968px) {
     .content-grid,
@@ -3502,6 +3856,46 @@ footer {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .presenter-card {
+        grid-template-columns: 1fr;
+    }
+
+    .presenter-photo {
+        width: 96px;
+        height: 96px;
+    }
+
+    .workshop-code-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fintech-workshop-page .presenter-card {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .fintech-workshop-page .sidebar-card.plain-panel,
+    .fintech-workshop-page .learning-steps .workshop-step,
+    .fintech-workshop-page .code-step-card {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .fintech-workshop-page .concepts-matrix-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 12px 0;
+    }
+
+    .fintech-workshop-page .concepts-pillars {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .clean-diagram-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-content {
